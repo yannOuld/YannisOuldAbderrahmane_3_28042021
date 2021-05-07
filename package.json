@@ -1,0 +1,21 @@
+{
+  "name": "sass-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.public/style.css --style compressed",
+    "prefix": "postcss ./public/style.css --use autoprefixer -d ./public/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yannOuld/YannisOuldAbderrahmane_3_28042021.git"
+  },
+  "author": "yannis ould abderrahmane",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/yannOuld/YannisOuldAbderrahmane_3_28042021/issues"
+  },
+  "homepage": "https://github.com/yannOuld/YannisOuldAbderrahmane_3_28042021#readme"
+}

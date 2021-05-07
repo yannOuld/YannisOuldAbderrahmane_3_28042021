@@ -5,81 +5,81 @@
         <meta charset ="utf-8" />
         <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1"/>
         <script src="https://kit.fontawesome.com/3549ae622e.js" crossorigin="anonymous"></script>
-
+        <link rel="stylesheet" href="/public/css/style.css">
     </head>
     <body>
         <header>
-            <nav>
-                <a href="index.html"><i class="fas fa-arrow-left"></i></a>
-                <img src="logo/ohmyfood.png" alt="logo oh my food">
+            <nav class="banniere">
+                <a class="banniere__link" href="index.html"><i class="fas fa-arrow-left"></i></a>
+                <img class="banniere__logo" src="images/logo/ohmyfood.png" alt="logo oh my food">
             </nav>
         </header>
-        <main>
-            <img src="restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo plat la palette du gout">
-            <span> <h1>La palette du goût</h1> <i class="far fa-heart"></i></span>
+        <main class="menu">
+            <img class="menu__img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo plat la palette du gout" >
+            <span> <h1 class="menu__title">La palette du goût</h1> <i class="far fa-heart menu__icon"></i> </span>
 
-            <section class="entrées">
-                <h2>ENTRÉES</h2>
+            <section class="menu__entrées">
+                <h2 class="menu__heading">ENTRÉES</h2>
     
-                <div>
-                    <h3>Fricassée d'escargot</h3>
-                    <p>Au pimet d'espelette</p> <span><p>25€</p></span>
-                </div>
+                <ul class="list">
+                    <li class="list__name">Fricassée d'escargot</li>
+                    <li class="list__content">>Au pimet d'espelette <span class="list__price">25€</span></li> 
+                </ul>
     
-                <div>
-                    <h3>Foie gras de canard mi-cuit</h3>
-                    <p>Et ses copeaux de truffe noire</p><span><p>35€</p></span>
-                </div>
+                <ul class="list">
+                    <li class="list__name">Foie gras de canard mi-cuit</li>
+                    <li class="list__content">>Et ses copeaux de truffe noire <span class="list__price">35€</span></li>
+                </ul>
                 
-                <div>
-                    <h3>Oeuf au plat</h3>
-                    <p>Assaisonné à la truffe sur lit de...</p><span><p>20€</p></span>
-                </div>
+                <ul class="list">
+                    <li class="list__name">Oeuf au plat</li>
+                    <li class="list__content">>Assaisonné à la truffe sur lit de... <span class="list__price">20€</span></li>
+                </ul>
             </section>
-            <section class="plats">
-                <h2>PLATS</h2>
+            <section class="menu__plats">
+                <h2 class="menu__heading">PLATS</h2>
 
-                <div>
-                    <h3>Filet de boeuf aux herbes</h3>
-                    <p>Accompagné de sa ribambelle de légu...</p> <span><p>40€</p></span>
-                </div>
+                <ul class="list">
+                    <li class="list__name">Filet de boeuf aux herbes</li>
+                    <li class="list__content">>Accompagné de sa ribambelle de légu... <span class="list__price">40€</span></li> 
+                </ul>
 
-                <div>
-                    <h3>Parmentier de queue de boeuf</h3>
-                    <p>À la truffe noire sur sa purée de panais</p> <span><p>35€</p></span>
-                </div>
+                <ul>
+                    <li class="list__name">Parmentier de queue de boeuf</li>
+                    <li class="list__content">>À la truffe noire sur sa purée de panais <span class="list__price">35€</span></li> 
+                </ul>
 
-                <div>
-                    <h3>Filet de Turbot</h3>
-                    <p>Aux agrumes</p> <span><p>44€</p></span>
-                </div>
+                <ul class="list">
+                    <li class="list__name">Filet de Turbot</li>
+                    <li class="list__content">>Aux agrumes <span>44€</span class="list__price"></li> 
+                </ul>
 
             </section>
-            <section class="desserts">
-                <h2>DESSERTS</h2>
+            <section class="menu__desserts">
+                <h2 class="menu__heading">DESSERTS</h2>
                 
-                <div>
-                    <h3>Paris-Brest</h3>
-                    <p>Revisité</p> <span><p>18€</p></span>
-                </div>
+                <ul class="list">
+                    <li class="list__name">Paris-Brest</li>
+                    <li class="list__content">>Revisité <span>18€</span class="list__price"></li> 
+                </ul>
 
-                <div>
-                    <h3>Macaron au chocalat d'exception</h3>
-                    <p>Et glace à la vanille de Madagascar</p> <span><p>22€</p></span>
-                </div>
+                <ul class="list">
+                    <li class="list__name">Macaron au chocalat d'exception</li>
+                    <li class="list__content">>Et glace à la vanille de Madagascar <span class="list__price">22€</span></li> 
+                </ul>
 
-                <div>
-                    <h3>Mousse au chocolat</h3>
-                    <p>Au piment d'espelette et à la truffe noire</p> <span><p>23€</p></span>
-                </div>
+                <ul class="list">
+                    <li class="list__name">Mousse au chocolat</li>
+                    <li class="list__content">>Au piment d'espelette et à la truffe noire <span class="list__price">23€</span></li> 
+                </ul>
 
             </section>
 
-            <button>Commander</button>
+            <button class="menu__btn--purple">Commander</button>
         </main>
-        <footer>
-            <img src="logo/ohmyfood.png" alt="logo Oh my Food">
-            <ul>
+        <footer class="footer">
+            <img class="footer__logo--white" src="images/logo/ohmyfood.png" alt="logo Oh my Food">
+            <ul class="footer__list">
                 <li><a href=""><i class="fas fa-utensils"></i> Proposez un restaurant</a></li>
                 <li><a href=""><i class="fas fa-hands-helping"></i> Devenir partenaire</a></li>
                 <li><a href=""> Mentions légales</a></li>

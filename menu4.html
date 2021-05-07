@@ -5,83 +5,83 @@
         <meta charset ="utf-8" />
         <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1"/>
         <script src="https://kit.fontawesome.com/3549ae622e.js" crossorigin="anonymous"></script>
-
+        <link rel="stylesheet" href="/public/css/style.css">
     </head>
     <body>
         <header>
-            <nav>
-                <a href="index.html"><i class="fas fa-arrow-left"></i></a>
-                <img src="logo/ohmyfood.png" alt="logo oh my food">
+            <nav class="banniere">
+                <a class="banniere__link" href="index.html"><i class="fas fa-arrow-left"></i></a>
+                <img class="banniere__logo" src="images/logo/ohmyfood.png" alt="logo oh my food">
             </nav>
         </header>
-        <main>
-            <img src="restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo plat le délice des sens">
-            <span> <h1>Le délice des sens</h1> <i class="far fa-heart"></i></span>
+        <main class="menu">
+            <img class="menu__img" src="restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo plat le délice des sens">
+            <span> <h1 class="menu__heading">Le délice des sens</h1> <i class="far fa-heart"></i></span>
 
-            <section class="entrées">
-                <h2>ENTRÉES</h2>
+            <section class="menu__entrées">
+                <h2 class="menu__heading">ENTRÉES</h2>
     
-                <div>
-                    <h3>Tartare de thon</h3>
-                    <p>Assaisonné au yuzu</p> <span> <p>25€</p> </span>
-                </div>
+                <ul class="list">
+                    <li class="list__name">Tartare de thon</li>
+                    <li class="list__content">Assaisonné au yuzu <span class="list__price">25€</span></li> 
+                </ul>
     
-                <div>
-                    <h3>Bouchée de homard croustillant</h3>
-                    <p>Et sa farandole de petits légumes</p> <span> <p>35€</p> </span>
-                </div>
+                <ul class="list">
+                    <li class="list__name">Bouchée de homard croustillant</li>
+                    <li class="list__content">Et sa farandole de petits légumes <span class="list__price">35€</span></li> 
+                </ul>
 
-                <div>
-                    <h3>Velouté de cèpes</h3>
-                    <p>Aux truffes</p> <span> <p>20€</p> </span>
-                </div>
-
-            </section>
-            <section class="plats">
-                <h2>PLATS</h2>
-
-                <div>
-                    <h3>Poulet rôti aux herbes de provences</h3>
-                    <p>Et sa crème de truffe</p> <span> <p>40€</p> </span>
-                </div>
-
-                <div>
-                    <h3>Langoute rôtie</h3>
-                    <p>Et ses légumes de saison</p> <span> <p>35€</p> </span>
-                </div>
-
-                <div>
-                    <h3>Côte de boeuf angus</h3>
-                    <p>Et sa purée de panais</p> <span> <p>44€</p> </span>
-                </div>
+                <ul class="list">
+                    <li class="list__name">Velouté de cèpes</li>
+                    <li class="list__content">Aux truffes <span class="list__price">20€</span></li> 
+                </ul>
 
             </section>
-            <section class="desserts">
-                <h2>DESSERTS</h2>
+            <section class="menu__plats">
+                <h2 class="menu__heading">PLATS</h2>
+
+                <ul class="list">
+                    <li class="list__name">Poulet rôti aux herbes de provences</li>
+                    <li class="list__content">Et sa crème de truffe <span class="list__price">40€</span></li> 
+                </ul>
+
+                <ul class="list">
+                    <li class="list__name">Langoute rôtie</li>
+                    <li class="list__content">Et ses légumes de saison <span class="list__price">35€</span></li> 
+                </ul>
+
+                <ul class="list">
+                    <li class="list__name">Côte de boeuf angus</li>
+                    <li class="list__content">Et sa purée de panais <span class="list__price">44€</span></li> 
+                </ul>
+
+            </section>
+            <section class="menu__desserts">
+                <h2 class="menu__heading">DESSERTS</h2>
                 
-                <div>
-                    <h3>Farandole de desserts</h3>
-                    <p>Du chef</p> <span> <p>18€</p> </span>
-                </div>
+                <ul class="list">
+                    <li class="list__name">Farandole de desserts</li>
+                    <li class="list__content">Du chef <span class="list__price">18€</span></li> 
+                </ul>
                 
-                <div>
-                    <h3>Crème brulée</h3>
-                    <p>Revisitée</p> <span> <p>22€</p> </span>
-                </div>
+                <ul class="list">
+                    <li class="list__name">Crème brulée</li>
+                    <li class="list__content">Revisitée <span class="list__price">22€</span></li> 
+                </ul>
 
-                <div>
-                    <h3>Tiramisu</h3>
-                    <p>À la noisette</p> <span> <p>23€</p> </span>
-                </div>
+                <ul class="list">
+                    <li class="list__name">Tiramisu</li>
+                    <li class="list__content">À la noisette <span class="list__price">23€</span></li> 
+                </ul>
 
             </section>
 
-            <button>Commander</button>
+            <button class="menu__btn--purple">Commander</button>
 
         </main>
-        <footer>
-            <img src="logo/ohmyfood.png" alt="logo Oh my Food">
-            <ul>
+        <footer class="footer">
+            <img class="footer__logo--white" src="images/logo/ohmyfood.png" alt="logo Oh my Food">
+            <ul class="footer__list">
                 <li><a href=""><i class="fas fa-utensils"></i> Proposez un restaurant</a></li>
                 <li><a href=""><i class="fas fa-hands-helping"></i> Devenir partenaire</a></li>
                 <li><a href=""> Mentions légales</a></li>

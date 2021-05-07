@@ -5,83 +5,83 @@
         <meta charset ="utf-8" />
         <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1"/>
         <script src="https://kit.fontawesome.com/3549ae622e.js" crossorigin="anonymous"></script>
-
+        <link rel="stylesheet" href="/public/css/style.css">
     </head>
     <body>
         <header>
-            <nav>
-                <a href="index.html"><i class="fas fa-arrow-left"></i></a>
-                <img src="logo/ohmyfood.png" alt="logo oh my food">
+            <nav class="banniere">
+                <a class="banniere__link" href="index.html"><i class="fas fa-arrow-left"></i></a>
+                <img class="banniere__logo" src="images/logo/ohmyfood.png" alt="logo oh my food">
             </nav>
         </header>
-        <main>
-            <img src="restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo plat à la française">
-            <span> <h1>À la française</h1> <i class="far fa-heart"></i></span>
+        <main class="menu">
+            <img class="menu__img" src="restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo plat à la française">
+            <span> <h1 class="menu__title">À la française</h1> <i class="far fa-heart menu__icon"></i></span>
 
-            <section class="entrées">
-                <h2>ENTRÉES</h2>
+            <section class="menu__entrées">
+                <h2 class="menu__heading">ENTRÉES</h2>
     
-                <div>
-                    <h3>Tartare de poulpe acidulé</h3>
-                    <p>Aux zests d'orange</p> <span> <p>25€</p> </span>
-                </div>
+                <ul class="list">
+                    <li class="list__name">Tartare de poulpe acidulé</li>
+                    <li class="list__content">Aux zests d'orange  <span class="list__price">25€</span></li>
+                </ul>
     
-                <div>
-                    <h3>Velouté de légumes d'antan</h3>
-                    <p>Carotte, panais, topinambour</p> <span> <p>35€</p> </span>
-                </div>
+                <ul class="list">
+                    <li class="list__name">Velouté de légumes d'antan</li>
+                    <li class="list__content">Carotte, panais, topinambour <span class="list__price">35€</span></li> 
+                </ul>
 
-                <div>
-                    <h3>Soupe à l'oignon</h3>
-                    <p>Revisitée</p> <span> <p>20€</p> </span>
-                </div>
+                <ul class="list">
+                    <li class="list__name">Soupe à l'oignon</li>
+                    <li class="list__content">Revisitée <span class="list__price">20€</span></li> 
+                </ul>
 
                
             </section>
-            <section class="plats">
-                <h2>PLATS</h2>
+            <section class="menu__plats">
+                <h2 class="menu__heading">PLATS</h2>
 
-                <div>
-                    <h3>Coquilles Saint-Jacques</h3>
-                    <p>Accompagnées d'une purée de panais</p> <span> <p>40€</p> </span>
-                </div>
+                <ul class="list">
+                    <li class="list__name">Coquilles Saint-Jacques</li>
+                    <li class="list__content">Accompagnées d'une purée de panais <span class="list__price">40€</span></li> 
+                </ul>
 
-                <div>
-                    <h3>Magret de canard</h3>
-                    <p>Et parmentier de pommes de terres</p> <span> <p>35€</p> </span>
-                </div>
+                <ul class="list">
+                    <li class="list__name">Magret de canard</li>
+                    <li class="list__content">Et parmentier de pommes de terres <span class="list__price">35€</span></li> 
+                </ul>
 
-                <div>
-                    <h3>Pigeonneau d'Illes-et-Vilaine</h3>
-                    <p>Sur son lit de gnocchis aux légumes</p> <span> <p>44€</p> </span>
-                </div>
-
-            </section>
-            <section class="desserts">
-                <h2>DESSERTS</h2>
-                
-                <div>
-                    <h3>Pétales de violettes glacés</h3>
-                    <p>Et purée de noisettes</p> <span> <p>18€</p> </span>
-                </div>
-
-                <div>
-                    <h3>Fondant au chocolat</h3>
-                    <p>Revisité</p> <span> <p>22€</p> </span>
-                </div>
-                
-                <div>
-                    <h3>Millefeuille croustillant</h3>
-                    <p>Myrtilles et pâte d'amandes</p> <span> <p>23€</p> </span>
-                </div>
+                <ul class="list">
+                    <li class="list__name">Pigeonneau d'Illes-et-Vilaine</li>
+                    <li class="list__content">Sur son lit de gnocchis aux légumes <span class="list__price">44€</span></li> 
+                </ul>
 
             </section>
+            <section class="menu__desserts">
+                <h2 class="menu__heading">DESSERTS</h2>
+                
+                <ul class="list">
+                    <li class="list__name">Pétales de violettes glacés</li>
+                    <li class="list__content">Et purée de noisettes <span class="list__price">18€</span></li> 
+                </ul>
 
-            <button>Commander</button>
+                <ul class="list">
+                    <li class="list__name">Fondant au chocolat</li>
+                    <li class="list__content">Revisité <span class="list__price">22€</span></li> 
+                </ul>
+                
+                <ul class="list">
+                    <li class="list__name">Millefeuille croustillant</li>
+                    <li class="list__content">Myrtilles et pâte d'amandes <span class="list__price">23€</span></li> 
+                </ul>
+
+            </section>
+
+            <button class="menu__btn--purple">Commander</button>
         </main>
-        <footer>
-            <img src="logo/ohmyfood.png" alt="logo Oh my Food">
-            <ul>
+        <footer class="footer">
+            <img class="footer__logo--white" src="images/logo/ohmyfood.png" alt="logo Oh my Food">
+            <ul class="footer__list">
                 <li><a href=""><i class="fas fa-utensils"></i> Proposez un restaurant</a></li>
                 <li><a href=""><i class="fas fa-hands-helping"></i> Devenir partenaire</a></li>
                 <li><a href=""> Mentions légales</a></li>

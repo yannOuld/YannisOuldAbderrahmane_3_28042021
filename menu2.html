@@ -5,88 +5,88 @@
         <meta charset ="utf-8" />
         <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1"/>
         <script src="https://kit.fontawesome.com/3549ae622e.js" crossorigin="anonymous"></script>
-
+        <link rel="stylesheet" href="/public/css/style.css">
     </head>
     <body>
         <header>
-            <nav>
-                <a href="index.html"><i class="fas fa-arrow-left"></i></a>
-                <img src="logo/ohmyfood.png" alt="logo oh my food">
+            <nav class="banniere">
+                <a class="banniere__link" href="index.html"><i class="fas fa-arrow-left"></i></a>
+                <img class="banniere__logo" src="images/logo/ohmyfood.png" alt="logo oh my food">
             </nav>
         </header>
-        <main>
-            <img src="restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo plat la note enchantée">
-            <span> <h1>La note enchantée</h1> <i class="far fa-heart"></i></span>
+        <main class="menu">
+            <img class="menu__img" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo plat la note enchantée">
+            <span> <h1 class="menu__title">La note enchantée</h1> <i class="far fa-heart menu__icon"></i></span>
 
-            <section class="entrées">
-                <h2>ENTRÉES</h2>
+            <section class="menu__entrées">
+                <h2 class="menu__heading">ENTRÉES</h2>
     
-                <div>
-                    <h3>Ravioles de foie gras</h3>
-                    <p>Accompagnés de leur crème à la truffe</p> <span> <p>25€</p> </span>
-                </div>
+                <ul class="list">
+                    <li class="list__name">Ravioles de foie gras</li>
+                    <li class="list__content">Accompagnés de leur crème à la truffe <span class="list__price">25€</span> </li> 
+                </ul>
     
-                <div>
-                    <h3>Caviar osciètre</h3>
-                    <p>Sur blini à la farine de blé noir</p> <span> <p>35€</p> </span>
-                </div>
+                <ul class="list">
+                    <li class="list__name">Caviar osciètre</li>
+                    <li class="list__content">Sur blini à la farine de blé noir <span class="list__price">35€</span></li>
+                </ul>
 
-                <div>
-                    <h3>Homard et espuma de...</h3>
-                    <p>Mariné aux zests d'orange</p> <span> <p>20€</p> </span>
-                </div>
+                <ul class="list">
+                    <li class="list__name">Homard et espuma de...</li>
+                    <li class="list__content">Mariné aux zests d'orange <span class="list__price">20€</span></li> 
+                </ul>
 
-                <div>
-                    <h3>Foie gras de canard cuit entier</h3>
-                    <p>Confiture de figue et pain toasté</p> <span> <p>35€</p> </span>
-                </div>
+                <ul class="list">
+                    <li class="list__name">Foie gras de canard cuit entier</li>
+                    <li class="list__content">Confiture de figue et pain toasté <span class="list__price">35€</span> </li> 
+                </ul>
                
             </section>
-            <section class="plats">
-                <h2>PLATS</h2>
+            <section class="menu__plats">
+                <h2 class="menu__heading">PLATS</h2>
 
-                <div>
-                    <h3>Noix de coquilles Saint-Jacques</h3>
-                    <p>Sur lit de purée de céleri-rave</p> <span> <p>40€</p> </span>
-                </div>
+                <ul class="list">
+                    <li class="list__name">Noix de coquilles Saint-Jacques</li>
+                    <li class="list__content">Sur lit de purée de céleri-rave <span class="list__price">40€</span> </li> 
+                </ul>
 
-                <div>
-                    <h3>Langoustine poêlée</h3>
-                    <p>Purée de patate douce</p> <span> <p>35€</p> </span>
-                </div>
+                <ul class="list">
+                    <li class="list__name">Langoustine poêlée</li>
+                    <li class="list__content">Purée de patate douce <span class="list__price">35€</span></li>
+                </ul>
 
-                <div>
-                    <h3>Mijoté de queue de boeuf</h3>
-                    <p>Et riz sauvage aux zests de citron</p> <span> <p>44€</p> </span>
-                </div>
+                <ul>
+                    <li class="list__name">Mijoté de queue de boeuf</li>
+                    <li class="list__content">Et riz sauvage aux zests de citron <span class="list__price">44€</span></li> 
+                </ul>
 
             </section>
-            <section class="desserts">
-                <h2>DESSERTS</h2>
+            <section class="menu__desserts">
+                <h2 class="menu__heading">DESSERTS</h2>
                 
-                <div>
-                    <h3>Macaron noisette et chocolat</h3>
-                    <p>Glace au caramel brun et sel de Guérande</p> <span> <p>18€</p> </span>
-                </div>
+                <ul class="list">
+                    <li class="list__name">Macaron noisette et chocolat</li>
+                    <li class="list__content">Glace au caramel brun et sel de Guérande <span class="list__price">18€</span></li> 
+                </ul>
 
-                <div>
-                    <h3>Baba au rhum revisité</h3>
-                    <p>Avec son coulis de citron</p> <span> <p>22€</p> </span>
-                </div>
+                <ul class="list">
+                    <li class="list__name">Baba au rhum revisité</li>
+                    <li class="list__content">Avec son coulis de citron <span class="list__price">22€</span></li> 
+                </ul>
 
-                <div>
-                    <h3>Tarte au citron meringuée</h3>
-                    <p>Destructurée</p> <span> <p>23€</p> </span>
-                </div>
+                <ul class="list">
+                    <li class="list__name">Tarte au citron meringuée</li>
+                    <li class="list__content">Destructurée <span class="list__price">23€</span></li> 
+                </ul>
 
             </section>
 
-            <button>Commander</button>
+            <button class="menu__btn--purple">Commander</button>
 
         </main>
-        <footer>
-            <img src="logo/ohmyfood.png" alt="logo Oh my Food">
-            <ul>
+        <footer class="footer">
+            <img class="footer__logo--white" src="images/logo/ohmyfood.png" alt="logo Oh my Food">
+            <ul class="footer__list">
                 <li><a href=""><i class="fas fa-utensils"></i> Proposez un restaurant</a></li>
                 <li><a href=""><i class="fas fa-hands-helping"></i> Devenir partenaire</a></li>
                 <li><a href=""> Mentions légales</a></li>
