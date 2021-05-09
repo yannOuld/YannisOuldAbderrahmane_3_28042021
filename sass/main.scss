@@ -1,0 +1,135 @@
+@import './Utils/_variables';
+@import './Utils/_mixins';
+@import './Components/_components';
+@import './Utils/_placeholders';
+
+body{
+    width: 100%;
+    @extend %flex-col;  
+}
+
+a {
+    @include no-deco;
+}
+
+.banniere {
+    width: 100%;
+    @include center;
+    @extend %flex-row;
+    flex-wrap: wrap;
+    &__logo {
+        width: 200px;
+        margin: 0 25%;
+    }
+    &__map {
+        display: block;
+        width: 100%;
+    }
+}
+.introduction {
+    background-color: $color-smoke;
+    width: 100%;
+    height: 300px;
+    @include center;
+    &__heading{
+        margin: 0px 40px 0;
+        width: 250px;
+    }
+    &__text{
+        margin: 20px 40px 50px;
+    }
+    &__btn--purple{
+        @include btn;
+        padding: 15px 20px;
+        color: white;
+    }
+}
+.manual {
+   margin: 0 20px 30px;;
+   height: 300px;
+   @extend %flex-col;
+   justify-content: space-evenly;
+   &__step {
+       @include manual-number;
+       padding: 8px 10px;
+       color: white;
+       width: 10px;
+   }
+   &__rule {
+       padding: 20px;
+       width: 90%;
+       border-radius: $radius-light;
+       
+    }
+}
+.repertory {
+    width: 100%;
+    @extend %flex-col;
+    @include center;
+    background-color: $color-smoke;
+    
+}
+.card {
+    width: 300px;
+    @include border;
+    &__img {
+        width: 100%;
+        height: 200px;
+        @include border-radius-top;
+        
+    }
+    &__caption{
+        @extend %flex-row;
+        text-align: left;
+        margin: 5px 20px;
+    }
+    &__new {
+        width: 100px;
+        padding: 10px;
+        text-align: center;
+        position: absolute;
+        
+        background-color: $color-mint;
+        
+    }
+}
+.menu {
+    width: 100%;
+    height: 1800px;
+    background-color: $color-smoke;
+    @include center;
+    &__img {
+        width: 100%;
+        height: 400px;
+    }
+    &__title {
+        @extend %flex-row;
+        border-radius: $radius-medium $radius-medium 0 0;
+    }
+}
+.product{
+    @include border;
+    @extend %flex-row;
+    margin: $margin;
+    &__list{
+        text-align: left;
+        @include no-deco;
+    }
+    &__title{
+        font-weight: bold;
+    }
+    &__price {
+        padding-left: 50px;
+    }
+}
+
+.footer {
+    background-color: $color-outerspace;
+    width: 100%;
+    &__list{
+        @include no-deco;
+    }
+    > a {
+        color: white;
+    }
+}
