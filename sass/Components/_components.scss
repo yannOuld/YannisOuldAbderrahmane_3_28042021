@@ -1,0 +1,12 @@
+@mixin manual-number {
+    border: 1px solid $color-rebecca-purple;
+    border-radius: $radius-heavy;
+    background-color: $color-rebecca-purple;
+    text-align: center;
+}
+@mixin btn {
+    border: 1px solid $color-medium-purple;
+    border-radius: $radius-medium;
+    background-color: $color-medium-purple;
+    box-shadow: inset 0px -10px 39px -20px $color-rebecca-purple;
+}
