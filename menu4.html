@@ -7,7 +7,9 @@
         <script src="https://kit.fontawesome.com/3549ae622e.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="public/style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -17,16 +19,16 @@
             </nav>
         </header>
         <main class="menu">
-            <img class="menu__img" src="restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo plat le délice des sens">
-            <div class="menu__heading"> <h1>Le délice des sens</h1> <i class="far fa-heart"></i></div>
+            <img class="menu__img" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo plat le délice des sens">
+            <div class="menu__title"> <h1>Le délice des sens</h1> <i class="far fa-heart menu__icon"></i></div>
 
             <section class="menu__entrées">
                 <h2 class="menu__heading">ENTRÉES</h2>
                 
-                <div>
-                    <ul class="list">
-                        <li class="list__name">Tartare de thon</li>
-                        <li class="list__content">Assaisonné au yuzu <span class="product__price">25€</span></li> 
+                <div class="product">
+                    <ul class="product__list">
+                        <li class="product__name">Tartare de thon</li>
+                        <li class="product__content">Assaisonné au yuzu <span class="product__price">25€</span></li> 
                     </ul>
                     <div class="product__check--mint">
                         <i class="fas fa-check-circle"></i>
@@ -34,10 +36,10 @@
                 </div>
                 
     
-                <div>
-                    <ul class="list">
-                        <li class="list__name">Bouchée de homard croustillant</li>
-                        <li class="list__content">Et sa farandole de petits légumes <span class="product__price">35€</span></li> 
+                <div class="product">
+                    <ul class="product__list">
+                        <li class="product__name">Bouchée de homard croustillant</li>
+                        <li class="product__content">Et sa farandole de petits légumes <span class="product__price">35€</span></li> 
                     </ul>
                     <div class="product__check--mint">
                         <i class="fas fa-check-circle"></i>
@@ -45,10 +47,10 @@
                 </div>
                 
 
-                <div>
-                    <ul class="list">
-                        <li class="list__name">Velouté de cèpes</li>
-                        <li class="list__content">Aux truffes <span class="product__price">20€</span></li> 
+                <div class="product">
+                    <ul class="product__list">
+                        <li class="product__name">Velouté de cèpes</li>
+                        <li class="product__content">Aux truffes <span class="product__price">20€</span></li> 
                     </ul>
                     <div class="product__check--mint">
                         <i class="fas fa-check-circle"></i>
@@ -60,10 +62,10 @@
             <section class="menu__plats">
                 <h2 class="menu__heading">PLATS</h2>
 
-                <div>
-                    <ul class="list">
-                        <li class="list__name">Poulet rôti aux herbes de provences</li>
-                        <li class="list__content">Et sa crème de truffe <span class="product__price">40€</span></li> 
+                <div class="product">
+                    <ul class="product__list">
+                        <li class="product__name">Poulet rôti aux herbes de provences</li>
+                        <li class="product__content">Et sa crème de truffe <span class="product__price">40€</span></li> 
                     </ul>
                     <div class="product__check--mint">
                         <i class="fas fa-check-circle"></i>
@@ -71,10 +73,10 @@
                 </div>
                 
 
-                <div>
-                    <ul class="list">
-                        <li class="list__name">Langoute rôtie</li>
-                        <li class="list__content">Et ses légumes de saison <span class="product__price">35€</span></li> 
+                <div class="product">
+                    <ul class="product__list">
+                        <li class="product__name">Langoute rôtie</li>
+                        <li class="product__content">Et ses légumes de saison <span class="product__price">35€</span></li> 
                     </ul>
                     <div class="product__check--mint">
                         <i class="fas fa-check-circle"></i>
@@ -82,10 +84,10 @@
                 </div>
                 
 
-                <div>
-                    <ul class="list">
-                        <li class="list__name">Côte de boeuf angus</li>
-                        <li class="list__content">Et sa purée de panais <span class="product__price">44€</span></li> 
+                <div class="product">
+                    <ul class="product__list">
+                        <li class="product__name">Côte de boeuf angus</li>
+                        <li class="product__content">Et sa purée de panais <span class="product__price">44€</span></li> 
                     </ul>
                     <div class="product__check--mint">
                         <i class="fas fa-check-circle"></i>
@@ -97,10 +99,10 @@
             <section class="menu__desserts">
                 <h2 class="menu__heading">DESSERTS</h2>
                 
-                <div>
-                    <ul class="list">
-                        <li class="list__name">Farandole de desserts</li>
-                        <li class="list__content">Du chef <span class="product__price">18€</span></li> 
+                <div class="product">
+                    <ul class="product__list">
+                        <li class="product__name">Farandole de desserts</li>
+                        <li class="product__content">Du chef <span class="product__price">18€</span></li> 
                     </ul>
                     <div class="product__check--mint">
                         <i class="fas fa-check-circle"></i>
@@ -108,10 +110,10 @@
                 </div>
                 
                 
-                <div>
-                    <ul class="list">
-                        <li class="list__name">Crème brulée</li>
-                        <li class="list__content">Revisitée <span class="product__price">22€</span></li> 
+                <div class="product">
+                    <ul class="product__list">
+                        <li class="product__name">Crème brulée</li>
+                        <li class="product__content">Revisitée <span class="product__price">22€</span></li> 
                     </ul>
                     <div class="product__check--mint">
                         <i class="fas fa-check-circle"></i>
@@ -119,10 +121,10 @@
                 </div>
                 
 
-                <div>
-                    <ul class="list">
-                        <li class="list__name">Tiramisu</li>
-                        <li class="list__content">À la noisette <span class="product__price">23€</span></li> 
+                <div class="product">
+                    <ul class="product__list">
+                        <li class="product__name">Tiramisu</li>
+                        <li class="product__content">À la noisette <span class="product__price">23€</span></li> 
                     </ul>
                     <div class="product__check--mint">
                         <i class="fas fa-check-circle"></i>

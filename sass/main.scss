@@ -8,6 +8,7 @@
 body{
     width: 100%;
     @extend %flex-col;  
+    margin: auto;
 }
 
 a {
@@ -21,7 +22,9 @@ a {
     flex-wrap: wrap;
     &__logo {
         width: 200px;
-        margin: 0 25%;
+        height: 40px;
+        padding: 5px 0;
+        margin: auto;
     }
     &__map {
         display: block;
@@ -29,6 +32,9 @@ a {
         height: 50px;
         border-style: none;
         background-color: darken($color: $color-smoke, $amount: 10%);
+    }
+    &__link {
+        padding: 20px;
     }
 }
 .introduction {
@@ -66,11 +72,15 @@ a {
        margin: 20px;
     }
    &__rule {
-       padding: 20px;
        width: 100%;
        height: 70px;
        border-radius: 25px;
        margin: 20px 0;
+       border-style: none;
+       text-align: left;
+       i {
+           padding: 0 20px 0 40px;
+       }
     }
 }
 .repertory {
@@ -79,7 +89,10 @@ a {
     background-color: $color-smoke;
     &__heading {
         text-align: left;
-        margin: 10px 20px;
+        @include heading-margin;
+    }
+    &__container{
+        margin-bottom: 30px;
     }
 }
 .card {
@@ -94,18 +107,18 @@ a {
     &__caption{
         @extend %flex-row;
         text-align: left;
-        margin: 5px 20px;
+        margin:20px 20px 0;
+        justify-content: space-between;
     }
     &__new--mint {
-        width: 100px;
+        width: 80px;
         padding: 10px;
-        margin: 10px  0 0 55%;
+        margin: 10px  0 0 60%;
         border-radius: 5px;
         text-align: center;
         position: absolute;
         color: darken($color: $color-mint, $amount: 50%);
         background-color: $color-mint;
-        
     }
 }
 .menu {
@@ -125,10 +138,22 @@ a {
         z-index: 1;
         margin-top: -100px;
         background-color: $color-smoke;
+        padding: 0 15px;
+        h1 {
+            width: 90%;
+        }
+        i {
+            width: 10%;
+        }
+    }
+    &__heading {
+        @include heading-margin;
+        position: relative;
+        padding-bottom: 5px;
     }
     &__icon {
         height: 50px;
-        padding: 30px;
+        padding: 30px 0;
     }
     &__btn--purple{
         @include btn;
@@ -152,6 +177,7 @@ a {
     }
     &__title{
         font-weight: bold;
+
     }
     &__content {
         display: flex;
@@ -171,11 +197,15 @@ a {
     &__list {
         @include no-deco;
         padding: 0;
-        margin: 0 30px;
+        margin: 0 30px 30px;
     }
     &__logo {
-        width: 150px;
+        width: 100px;
         margin: 10px 30px;
+    }
+    i {
+     margin-right: 10px;
+     
     }
    
 }

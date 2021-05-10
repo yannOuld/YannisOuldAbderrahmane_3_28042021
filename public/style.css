@@ -4,13 +4,23 @@
   content: counter(number);
   counter-increment: number;
   color: white;
-  padding: 10px 8px 3px;
+  padding: 8px 10px 3px;
   margin: 40px -10px;
   font-weight: bold;
-  border: 1px solid rebeccapurple;
+  border: 1px solid #9604c4;
   border-radius: 100%;
-  background-color: rebeccapurple;
+  background-color: #9604c4;
   position: absolute;
+}
+
+.menu__heading::after {
+  content: "";
+  height: 3px;
+  width: 60px;
+  background: #a1eccd;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .menu, .repertory, .manual__list, .manual, .introduction, body {
@@ -38,13 +48,52 @@ body {
 
 .introduction__heading {
   font-size: 30px;
-  font-weight: bolder;
+  font-weight: 900;
 }
 .introduction__text {
   font-size: 18px;
 }
 .introduction__btn {
   font-size: 15px;
+}
+
+.manual__rule {
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.repertory__heading {
+  font-weight: 900;
+}
+
+.card__title {
+  color: black;
+  font-weight: 900;
+  font-size: 20px;
+}
+.card__new--mint {
+  font-weight: 900;
+  font-size: 16px;
+}
+.card i {
+  font-size: 35px;
+  font-weight: 10;
+}
+
+.menu__title {
+  font-family: Fraunces;
+  font-style: Black 900 italic;
+}
+.menu__title i {
+  font-size: 30px;
+}
+.menu__heading {
+  font-weight: 400;
+}
+
+.product__name {
+  font-size: 18px;
+  font-weight: 900;
 }
 
 .footer__element {
@@ -54,6 +103,7 @@ body {
 
 body {
   width: 100%;
+  margin: auto;
 }
 
 a {
@@ -68,7 +118,9 @@ a {
 }
 .banniere__logo {
   width: 200px;
-  margin: 0 25%;
+  height: 40px;
+  padding: 5px 0;
+  margin: auto;
 }
 .banniere__map {
   display: block;
@@ -76,6 +128,9 @@ a {
   height: 50px;
   border-style: none;
   background-color: #d7d7d7;
+}
+.banniere__link {
+  padding: 20px;
 }
 
 .introduction {
@@ -116,11 +171,15 @@ a {
   margin: 20px;
 }
 .manual__rule {
-  padding: 20px;
   width: 100%;
   height: 70px;
   border-radius: 25px;
   margin: 20px 0;
+  border-style: none;
+  text-align: left;
+}
+.manual__rule i {
+  padding: 0 20px 0 40px;
 }
 
 .repertory {
@@ -129,7 +188,10 @@ a {
 }
 .repertory__heading {
   text-align: left;
-  margin: 10px 20px;
+  margin: 40px 20px 10px;
+}
+.repertory__container {
+  margin-bottom: 30px;
 }
 
 .card {
@@ -146,12 +208,13 @@ a {
 }
 .card__caption {
   text-align: left;
-  margin: 5px 20px;
+  margin: 20px 20px 0;
+  justify-content: space-between;
 }
 .card__new--mint {
-  width: 100px;
+  width: 80px;
   padding: 10px;
-  margin: 10px 0 0 55%;
+  margin: 10px 0 0 60%;
   border-radius: 5px;
   text-align: center;
   position: absolute;
@@ -175,10 +238,22 @@ a {
   z-index: 1;
   margin-top: -100px;
   background-color: #f0f0f0;
+  padding: 0 15px;
+}
+.menu__title h1 {
+  width: 90%;
+}
+.menu__title i {
+  width: 10%;
+}
+.menu__heading {
+  margin: 40px 20px 10px;
+  position: relative;
+  padding-bottom: 5px;
 }
 .menu__icon {
   height: 50px;
-  padding: 30px;
+  padding: 30px 0;
 }
 .menu__btn--purple {
   color: white;
@@ -228,11 +303,14 @@ a {
   list-style-type: none;
   text-decoration: none;
   padding: 0;
-  margin: 0 30px;
+  margin: 0 30px 30px;
 }
 .footer__logo {
-  width: 150px;
+  width: 100px;
   margin: 10px 30px;
+}
+.footer i {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
