@@ -1,0 +1,30 @@
+body{
+    font-family: Roboto ;
+}
+.banniere {
+    
+    &__link {
+        font-size: 20px;
+        color: black;
+    }
+    &__map {
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+.introduction {
+    &__heading {
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    &__text {
+        font-size: 18px;
+    }
+    &__btn {
+        font-size: 15px;
+    }
+}
+.footer__element {
+    text-decoration: none;
+    color: white;
+}
