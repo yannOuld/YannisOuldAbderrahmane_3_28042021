@@ -1,221 +1,85 @@
-@import './Utils/_variables';
-@import './Utils/_mixins';
-@import './Components/_components';
-@import './Utils/_placeholders';
-@import './Base/fonts.scss';
+@import "./Utils/variables";
+@import "./Utils/mixins";
+@import "./Components/components";
+@import "./Utils/placeholders";
+@import "./Base/fonts.scss";
+@import "./Base/sizing";
+@import "./Layout/header-footer";
+@import "./Pages/index.scss";
 
-
-body{
-    width: 100%;
-    @extend %flex-col;  
-    margin: auto;
+body {
+  @extend %flex-col;
+  width: 100%;
 }
-
 a {
-    @include no-deco;
-}
-
-.banniere {
-    width: 100%;
-    @include center;
-    flex-wrap: wrap;
-    &__shadow-box{
-        width: 100%;
-        display: flex;
-        box-shadow: 0px 12px 8px 1px rgba(0,0,0,0.42);
-        z-index: 1;
-    }
-    &__logo {
-        width: 200px;
-        height: 40px;
-        padding: 5px 0;
-        margin: auto;
-    }
-    &__map {
-        display: block;
-        width: 100%;
-        height: 50px;
-        border-style: none;
-        background-color: darken($color: $color-smoke, $amount: 5%);
-    }
-    &__link {
-        padding: 20px;
-    }
-}
-.introduction {
-    background-color: $color-smoke;
-    width: 100%;
-    @include center;
-    @extend %flex-col;
-    &__heading{
-        width: 300px;
-        margin: 50px auto 30px;
-    }
-    &__text{
-        margin: 0 auto 40px;
-    }
-    &__btn--purple{
-        @include btn;
-        padding: 15px 20px;
-        width: 180px;
-        margin: 0 auto 60px;
-    }
-}
-.manual {
-   @extend %flex-col;
-   justify-content: space-evenly;
-   &__heading {
-       width: 200px;
-       margin: 40px 20px 0;
-    }
-   &__list {
-       list-style-type: none;
-       counter-reset: number;
-       @extend %flex-col;
-       justify-content: space-evenly;
-       padding: 0;
-       margin: 20px;
-    }
-   &__rule {
-       width: 100%;
-       height: 70px;
-       border-radius: 25px;
-       margin: 20px 0;
-       border-style: none;
-       text-align: left;
-       i {
-           padding: 0 20px 0 40px;
-       }
-       &__lightpurple {
-            background-color: lighten($color: $color-medium-purple, $amount:5%)
-        }
-       
-    }
-}
-.repertory {
-    @extend %flex-col;
-    @include center;
-    background-color: $color-smoke;
-    &__heading {
-        text-align: left;
-        @include heading-margin;
-    }
-    &__container{
-        margin-bottom: 30px;
-    }
-}
-.card {
-    width: 90%;
-    @include border;
-    margin: 20px auto;
-    background-color: white;
-    &__img {
-        width: 100%;
-        height: 200px;
-        @include border-radius-top;
-    }
-    &__caption{
-        @extend %flex-row;
-        text-align: left;
-        margin:20px 20px 0;
-        justify-content: space-between;
-    }
-    &__new--mint {
-        width: 80px;
-        padding: 10px;
-        margin: 10px  0 0 60%;
-        border-radius: 5px;
-        text-align: center;
-        position: absolute;
-        color: darken($color: $color-mint, $amount: 50%);
-        background-color: $color-mint;
-    }
+  @include no-deco;
 }
 .menu {
+  @extend %flex-col;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: $color-smoke;
+  &__img {
     width: 100%;
-    background-color: $color-smoke;
-    @extend %flex-col;
-    justify-content: space-evenly;
-    border: 1px solid transparent;
-    &__img {
-        width: 100%;
-        height: 400px;
-    }
-    &__title {
-        @extend %flex-row;
-        border-radius: $radius-medium $radius-medium 0 0;
-        height: 100px;
-        z-index: 1;
-        margin-top: -100px;
-        background-color: $color-smoke;
-        padding: 0 15px;
-        h1 {
-            width: 90%;
-        }
-        i {
-            width: 10%;
-        }
-    }
-    &__heading {
-        @include heading-margin;
-        position: relative;
-        padding-bottom: 5px;
-    }
-    &__icon {
-        height: 50px;
-        padding: 30px 0;
-    }
-    &__btn--purple{
-        @include btn;
-        margin: 30px auto;
-        padding: 10px 20px;
-        width: 150px;
-        
-    }
-}
-.product{
-    @include border;
+    height: 400px;
+  }
+  &__title {
     @extend %flex-row;
-    margin: 20px auto;
-    width: 90%;
-    background-color: white;
-    &__list{
-        text-align: left;
-        @include no-deco;
-        padding: 0 $padding-small;
-        width: 100%;
-    }
-    &__title{
-        font-weight: bold;
-
-    }
-    &__content {
-        display: flex;
-        justify-content: space-between;
-    }
-    &__price {
-        font-weight: bold;
-    }
-    &__check--mint {
-        display: none;
-    }
-}
-
-.footer {
-    background-color: $color-outerspace;
-    width: 100%;
-    &__list {
-        @include no-deco;
-        padding: 0;
-        margin: 0 30px 30px;
-    }
-    &__logo {
-        width: 100px;
-        margin: 10px 30px;
+    border-radius: $radius-medium $radius-medium 0 0;
+    height: 100px;
+    z-index: 1;
+    background-color: $color-smoke;
+    h1 {
+      width: 90%;
     }
     i {
-     margin-right: 10px;
-     
+      width: 10%;
     }
-   
+  }
+  &__heading {
+    @include heading-margin;
+    padding-bottom: 5px;
+    position: relative;
+  }
+  &__btn--purple {
+    @include btn;
+  }
 }
+.product {
+  @extend %flex-row;
+  @include border;
+  cursor: pointer;
+  background-color: white;
+  width: 90vw;
+  height: 70px;
+  position: relative;
+  &__list {
+    @include no-deco;
+    text-align: left;
+    width: 100%;
+    li {
+      @extend %flex-row;
+      justify-content: space-between;
+      max-width: 85vw;
+    }
+  }
+  &__name {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 73vw;
+  }
+  &__content{
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 73vw;
+  }
+  &__price{
+    width: 30px;
+    
+  }
+
+}
+
