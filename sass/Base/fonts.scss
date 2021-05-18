@@ -1,0 +1,78 @@
+body{
+    font-family: Roboto ;
+}
+.banniere {
+    
+    &__link {
+        font-size: 20px;
+        color: black;
+    }
+    &__map {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+}
+.introduction {
+    &__heading {
+        font-size: 30px;
+        font-weight: 900;
+    }
+    &__text {
+        font-size: 18px;
+    }
+    &__btn {
+        font-size: 15px;
+    }
+}
+
+.manual {
+    &__rule{
+        font-size: 15px;
+        font-weight: bolder;
+
+    }
+}
+
+.repertory {
+    &__heading {
+        font-weight: 900;
+    }
+}
+.card {
+    &__title {
+        color: black;
+        font-weight: 900;
+        font-size: 20px;
+    }
+    &__new--mint {
+        font-weight: 900;
+        font-size: 16px;
+    }
+    i {
+        font-size: 35px;
+        font-weight: 10;
+    }
+}
+.menu {
+    &__title {
+        font-family: Fraunces;
+        font-style: Black 900 italic ;
+        i {
+            font-size: 30px;
+        }
+    }
+    &__heading {
+        font-weight: 400;
+    }
+}
+.product {
+    &__name  {
+        font-size: 18px;
+        font-weight: 900;
+    }
+}
+.footer__element {
+    text-decoration: none;
+    color: white;
+}

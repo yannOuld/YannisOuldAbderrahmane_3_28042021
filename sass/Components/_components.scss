@@ -1,12 +1,30 @@
-@mixin manual-number {
-    border: 1px solid $color-rebecca-purple;
+
+.manual__step:before {
+    content: counter(number);
+    counter-increment: number;
+    color: white;
+    padding: 8px 10px 3px;
+    margin: 40px -10px;
+    font-weight: bold;
+    border: 1px solid darken($color: $color-medium-purple, $amount: 30%);
     border-radius: $radius-heavy;
-    background-color: $color-rebecca-purple;
-    text-align: center;
+    background-color: darken($color: $color-medium-purple, $amount: 30%);
+    position: absolute;
 }
 @mixin btn {
+    color: white;
     border: 1px solid $color-medium-purple;
     border-radius: $radius-medium;
     background-color: $color-medium-purple;
     box-shadow: inset 0px -10px 39px -20px $color-rebecca-purple;
+    box-shadow: 0px 5px 10px 2px rgba(62, 73, 64, 0.13);
+}
+.menu__heading::after {
+    content: '';
+    height: 3px;
+    width: 60px;
+    background: $color-mint;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }

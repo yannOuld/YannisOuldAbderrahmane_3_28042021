@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/yannOuld/YannisOuldAbderrahmane_3_28042021/issues"
   },
-  "homepage": "https://github.com/yannOuld/YannisOuldAbderrahmane_3_28042021#readme"
+  "homepage": "https://github.com/yannOuld/YannisOuldAbderrahmane_3_28042021#readme",
+  "devDependencies": {
+    "prettier": "^2.3.0"
+  }
 }
