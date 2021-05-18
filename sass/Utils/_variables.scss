@@ -1,13 +1,15 @@
+/* Variables */
 /* -- color -- */
 $color-mint: #a1eccd;
-$color-medium-purple: rgb(216, 101, 252);
+$color-medium-purple: rgb(205, 81, 243);
+$color-darker-purple: darken($color-medium-purple, 100%);
 $color-rebecca-purple: rgba(102, 51, 153, 1);
 $color-smoke: rgb(240, 240, 240);
 $color-outerspace: rgba(46, 49, 49, 1);
+$color-heart: linear-gradient(188deg, rgba(104,27,105,1) 0%, rgba(192,57,240,1) 44%, rgba(248,100,255,1) 100%);
 /* -- Dimensions -- */
 $padding-small: 10px;
 $margin: 40px;
 $radius-light: 15px;
 $radius-medium: 30px;
 $radius-heavy: 100%;
-

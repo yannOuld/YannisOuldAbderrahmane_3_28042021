@@ -1,0 +1,93 @@
+/* Margins and paddings for the website */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+:root {
+  box-sizing: border-box;
+}
+
+body{
+    margin: auto;
+}
+.banniere{
+  &__logo{
+      margin: auto;
+      padding: 5px 0;
+  }
+  &__link{
+    padding: 20px;
+  }
+}
+.introduction{
+  &__heading {
+    margin: 50px auto 30px;
+  }
+  &__text {
+    margin: 0 auto 40px;
+  }
+  &__btn--purple {
+    margin: 0 auto 60px;
+    padding: 15px 20px;
+  }
+}
+.manual {
+  margin: 40px 0 ;
+  &__label {
+    margin: auto;
+  }
+  &__list {
+    margin: 20px;
+    padding: 0;
+  }
+  &__rule {
+    margin: 20px 0;
+    i {
+      padding: 0 20px 0 40px;
+    }
+  }
+}
+.repertory {
+  &__heading {
+    @include heading-margin;
+  }
+  &__container {
+    margin-bottom: 30px;
+  }
+}
+.card {
+  margin: 20px auto;
+  &__caption {
+    margin: 20px 20px 0;;
+  }
+  &__new--mint {
+    padding: 10px;
+  }
+}
+.menu {
+  &__title {
+    margin-top: -100px;
+    padding: 0 15px;
+  }
+  &__heading {
+    @include heading-margin;
+    padding-bottom: 5px;
+  }
+  &__icon {
+    padding: 30px 0;
+  }
+  &__btn--purple {
+    margin: 30px auto 60px;
+    padding: 15px 50px;
+  }
+}
+.product {
+  margin: 20px auto;
+  &__list {
+    padding: 0  0  0 $padding-small ;
+  }
+  &__check--mint{
+    padding-right: 10px;
+  }
+}

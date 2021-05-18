@@ -1,0 +1,83 @@
+/* CSS rules for index.html */
+.introduction {
+  @include center;
+  @extend %flex-col;
+  width: 100%;
+  background-color: $color-smoke;
+  &__heading {
+    width: 300px;
+  }
+  &__btn--purple {
+    @include btn;
+  }
+}
+.manual {
+  @extend %flex-col;
+  justify-content: space-evenly;
+  &__label {
+    width: 90%;
+  }
+  &__list {
+    list-style-type: none;
+    counter-reset: number;
+    @extend %flex-col;
+    justify-content: space-evenly;
+    margin: auto;
+  }
+  &__rule {
+    width: 80vw;
+    height: 70px;
+    border-radius: 25px;
+    border-style: none;
+    text-align: left;
+    outline: none;
+    &__lightpurple {
+      background-color: lighten($color: $color-medium-purple, $amount: 27%);
+      i {
+       color: $color-rebecca-purple;
+      }
+    }
+  }
+}
+.repertory {
+  @extend %flex-col;
+  @include center;
+  background-color: $color-smoke;
+  &__heading {
+    text-align: left;
+    @include heading-margin;
+  }
+  &__container {
+    margin-bottom: 30px;
+  }
+}
+.card {
+  width: 90%;
+  @include border;
+  margin: 20px auto;
+  background-color: white;
+  position: relative;
+  &__img {
+    width: 100%;
+    height: 200px;
+    @include border-radius-top;
+    object-fit: cover;
+    object-position: 50% 25%;
+  }
+  &__caption {
+    @extend %flex-row;
+    text-align: left;
+    margin: 20px 20px 0;
+    justify-content: space-between;
+  }
+  &__new--mint {
+    width: 80px;
+    top: 10px;
+    right: 10px;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    color: darken($color: $color-mint, $amount: 50%);
+    background-color: $color-mint;
+  }
+}
