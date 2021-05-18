@@ -1,3 +1,4 @@
+/* CSS rules for index.html */
 .introduction {
   @include center;
   @extend %flex-col;
@@ -29,6 +30,7 @@
     border-radius: 25px;
     border-style: none;
     text-align: left;
+    outline: none;
     &__lightpurple {
       background-color: lighten($color: $color-medium-purple, $amount: 27%);
       i {

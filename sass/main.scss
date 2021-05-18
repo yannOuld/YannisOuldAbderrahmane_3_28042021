@@ -15,13 +15,14 @@ a {
   @include no-deco;
 }
 .menu {
+  width: 100%;
   @extend %flex-col;
   justify-content: space-evenly;
-  width: 100%;
   background-color: $color-smoke;
   &__img {
     width: 100%;
     height: 400px;
+    object-fit: fill;
   }
   &__title {
     @extend %flex-row;
@@ -53,6 +54,7 @@ a {
   width: 90vw;
   height: 70px;
   position: relative;
+  overflow: hidden;
   &__list {
     @include no-deco;
     text-align: left;
@@ -78,7 +80,6 @@ a {
   }
   &__price{
     width: 30px;
-    
   }
 
 }

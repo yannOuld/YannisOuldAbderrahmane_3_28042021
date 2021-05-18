@@ -1,3 +1,4 @@
+/* head rules for all pages */
 .banniere {
     @include center;
     width: 100%;
@@ -19,6 +20,7 @@
       box-shadow: inset 0px 20px 2px -15px rgba(59, 68, 66, 0.19);
     }
 }
+/* footer rules for all pages */
 .footer {
     background-color: $color-outerspace;
     width: 100%;
