@@ -92,10 +92,33 @@
 
 /* animation menu */
 .anim-spawn {
-  animation: loading 1s cubic-bezier(.1,.17,.73,.73) 0s;
+  animation: loading 0.5s linear 0s;
 }
 .anim-spawn--big {
   animation: loading2 1s linear 0s ;
+}
+.anim-spawn--item {
+  animation: anim-item 1.5s linear 0s;
+  animation-fill-mode: both;
+}
+.anim-delay05 {
+  animation-delay: 500ms;
+}
+.anim-delay10 {
+  animation-delay: 1s;
+}
+.anim-delay15 {
+  animation-delay: 1.5s;
+}
+@keyframes anim-item {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 @keyframes loading {
   0% {
