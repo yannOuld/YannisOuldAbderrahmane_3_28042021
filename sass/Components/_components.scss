@@ -13,17 +13,6 @@
   position: absolute;
   
 }
-/* headings green underline*/
-.menu__heading::before,
-.menu__heading::after {
-  content: "";
-  height: 3px;
-  width: 60px;
-  background: $color-mint;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
 /* heart animation*/
 .card__heart::before {
   font-family: "Font Awesome 5 Free";
@@ -43,6 +32,17 @@
   background-clip: content-box;
 	-webkit-background-clip: text ;
 	-webkit-text-fill-color: transparent;
+}
+/* headings green underline*/
+.menu__heading::before,
+.menu__heading::after {
+  content: "";
+  height: 3px;
+  width: 60px;
+  background: $color-mint;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 /*product animation*/
 .product__check--mint {
@@ -92,7 +92,7 @@
 
 /* animation menu */
 .anim-spawn {
-  animation: loading 1s linear 0s;
+  animation: loading 1s cubic-bezier(.1,.17,.73,.73) 0s;
 }
 .anim-spawn--big {
   animation: loading2 1s linear 0s ;
