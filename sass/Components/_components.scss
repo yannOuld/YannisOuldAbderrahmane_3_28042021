@@ -92,15 +92,18 @@
 
 /* animation menu */
 .anim-spawn {
-  animation: chargement 1.5s linear 0s;
+  animation: loading 1s linear 0s;
 }
-@keyframes chargement {
+.anim-spawn--big {
+  animation: loading2 1s linear 0s ;
+}
+@keyframes loading {
   0% {
     display: none;
     transform-origin: top;
     height: 0;
     overflow: hidden;
-    opacity: 0;
+    opacity: 0.5;
   }
   25%{
     overflow: hidden;
@@ -114,12 +117,39 @@
   }
   75%{
     overflow: hidden;
-    height: 290px;
+    height: 240px;
     opacity: 0.8;
   }
   100% {
-    height:320px;
+    height:270px;
     opacity: 0.9;
   }
-
+}
+@keyframes loading2 {
+  0% {
+    display: none;
+    transform-origin: top;
+    height: 0;
+    overflow: hidden;
+    opacity: 0.5;
+  }
+  25%{
+    overflow: hidden;
+    height: 80px;
+    opacity: 0.6;
+  }
+  50% {
+    overflow: hidden;
+    height: 160px;
+    opacity: 0.7;
+  }
+  75%{
+    overflow: hidden;
+    height: 240px;
+    opacity: 0.8;
+  }
+  100% {
+    height:370px;
+    opacity: 0.9;
+  }
 }
