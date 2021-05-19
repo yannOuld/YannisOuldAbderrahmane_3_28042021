@@ -46,6 +46,12 @@ a {
     @include btn;
   }
 }
+.anim-spawn {
+  width: 100%;
+}
+.anim-spawn--big {
+  width: 100%;
+}
 .product {
   @extend %flex-row;
   @include border;
@@ -55,32 +61,31 @@ a {
   height: 70px;
   position: relative;
   overflow: hidden;
-  &__list {
+  &__content {
     @include no-deco;
     text-align: left;
     width: 100%;
-    li {
+    p {
       @extend %flex-row;
       justify-content: space-between;
-      max-width: 85vw;
     }
   }
   &__name {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    max-width: 73vw;
+    width: 100%;
   }
-  &__content{
+  &__ingredient{
     display: inline-block;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    width: 73vw;
+    width: 100%;
+    
   }
   &__price{
     width: 30px;
   }
 
 }
-

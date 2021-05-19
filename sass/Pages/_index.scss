@@ -80,4 +80,13 @@
     color: darken($color: $color-mint, $amount: 50%);
     background-color: $color-mint;
   }
+  &__heart{
+    width: 50px;
+    position: relative;
+    i {
+      position: absolute;
+      right: 0;
+      left: 0;
+    }
+  }
 }

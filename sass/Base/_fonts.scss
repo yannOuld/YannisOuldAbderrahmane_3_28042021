@@ -70,12 +70,14 @@ body {
   }
 }
 .product {
-  line-height: 24px;
+  &__content {
+    padding: 10px;
+  }
   &__name {
     font-size: 16px;
     font-weight: 900;
   }
-  &__content {
+  &__ingredient {
     font-size: 14px;
   }
   &__price {
