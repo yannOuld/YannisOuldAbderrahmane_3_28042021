@@ -14,24 +14,18 @@
   
 }
 /* heart animation*/
-.card__heart::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 400; 
-  content: "\f004";
-  display: inline-block;
-  font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  cursor: pointer;
-  transition: all  400ms;
+.heart--full {
+  opacity: 0;
 }
-.card__heart:hover::before {
-  font-weight: 900;
+.heart--empty:hover {
+  opacity: 0;
+}
+.heart--full:hover{
   background: $color-heart;
   background-clip: content-box;
-	-webkit-background-clip: text ;
-	-webkit-text-fill-color: transparent;
+  -webkit-background-clip: text ;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
 }
 /* headings green underline*/
 .menu__heading::before,
@@ -70,15 +64,15 @@
       animation: spin 1s ease-in-out 1; 
     }
   }
-  .product:hover &__list{
-    width: 70vw;
+  .product:hover &__content {
+    width: calc(100% - 80px);
     transition: all 1s ease-out;
   }
-  .product:hover &__content {
-    width: 48vw;
+  .product:hover &__ingredient {
+    width: calc(100% -80px);
   }
   .product:hover &__name {
-    width: 48vw;
+    width: calc(100% -80px);
   }
 }
 @keyframes spin {
@@ -92,16 +86,38 @@
 
 /* animation menu */
 .anim-spawn {
-  animation: loading 1s cubic-bezier(.1,.17,.73,.73) 0s;
+  animation: loading 1.5s linear 0s;
 }
 .anim-spawn--big {
   animation: loading2 1s linear 0s ;
+}
+.anim-spawn--item {
+  animation: anim-item 1.5s linear 0s;
+  animation-fill-mode: both;
+}
+.anim-delay05 {
+  animation-delay: 500ms;
+}
+.anim-delay10 {
+  animation-delay: 1s;
+}
+.anim-delay15 {
+  animation-delay: 1.5s;
+}
+@keyframes anim-item {
+  0% {
+    transform: translateY(40px);
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 @keyframes loading {
   0% {
     display: none;
     transform-origin: top;
-    height: 0;
     overflow: hidden;
     opacity: 0.5;
   }
