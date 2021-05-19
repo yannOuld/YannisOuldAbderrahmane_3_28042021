@@ -1,0 +1,179 @@
+/* Margins, paddings and sizing for the website */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+:root {
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  margin: auto;
+  @extend %flex-col;
+}
+/* index */
+.banniere{
+  &__logo{
+      margin: auto;
+      padding: 5px 0;
+  }
+  &__link{
+    padding: 20px;
+  }
+}
+.introduction{
+  @include center;
+  @extend %flex-col;
+  width: 100%;
+  &__heading {
+    width: 300px;
+    margin: 50px auto 30px;
+  }
+  &__text {
+    margin: 0 auto 40px;
+  }
+  &__btn--purple {
+    margin: 0 auto 60px;
+    padding: 15px 20px;
+  }
+}
+.manual {
+  @extend %flex-col;
+  justify-content: space-evenly;
+  margin: 40px 0 ;
+  &__label {
+    width: 90%;
+    margin: auto;
+  }
+  &__list {
+    @extend %flex-col;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 0;
+  }
+  &__rule {
+    width: 80vw;
+    height: 70px;
+    margin: 20px 0;
+    i {
+      padding: 0 20px 0 40px;
+    }
+  }
+}
+.repertory {
+  &__heading {
+    @extend %flex-col;
+    @include center;
+    @include heading-margin;
+  }
+  &__heading {
+    @include heading-margin;
+  }
+  &__container {
+    margin-bottom: 30px;
+  }
+}
+.card {
+  width: 90%;
+  margin: 20px auto;
+  &__img {
+    width: 100%;
+    height: 200px;
+  }
+  &__caption {
+    margin: 20px 20px 0;;
+    @extend %flex-row;
+    justify-content: space-between;
+  }
+  &__new--mint {
+    width: 80px;
+    padding: 10px;
+    top: 10px;
+    right: 10px;
+  }
+  &__heart{
+    width: 50px;
+    i {
+      right: 0;
+      left: 0;
+    }
+  }
+}
+/* Menus */
+.menu {
+  width: 100%;
+  @extend %flex-col;
+  justify-content: space-evenly;
+  &__img {
+    width: 100%;
+    height: 400px;
+  }
+  &__title {
+    @extend %flex-row;
+    height: 100px;
+    margin-top: -100px;
+    padding: 0 15px;
+    h1 {
+      width: 90%;
+    }
+    i {
+      width: 10%;
+    }
+  }
+  &__heading {
+    @include heading-margin;
+    padding-bottom: 5px;
+  }
+  &__icon {
+    padding: 30px 0;
+  }
+  &__btn--purple {
+    margin: 30px auto 60px;
+    padding: 15px 50px;
+  }
+}
+.menu__section {
+  height: 360px;
+ &--big{
+   height: 440px;
+ }
+}
+.product {
+  @extend %flex-row;
+  width: 90vw;
+  height: 70px;
+  margin: 20px auto;
+  &__content {
+    width: 100%;
+    p {
+      @extend %flex-row;
+      justify-content: space-between;
+    }
+  }
+  &__name{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  &__check--mint {
+    padding-right: 10px;
+  }
+  &__ingredient {
+    width: 100%;
+  }
+  &__price{
+    width: 30px;
+  }
+}
+.anim-spawn{
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  &--big {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+  }
+}
