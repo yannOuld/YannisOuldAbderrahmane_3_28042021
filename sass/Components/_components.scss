@@ -17,10 +17,10 @@
 .heart--full {
   opacity: 0;
 }
-.heart--empty:hover {
+.heart--empty:hover:active {
   opacity: 0;
 }
-.heart--full:hover{
+.heart--full:hover:active {
   background: $color-heart;
   background-clip: content-box;
   -webkit-background-clip: text ;
