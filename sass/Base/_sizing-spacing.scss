@@ -24,8 +24,8 @@ body{
   }
 }
 .introduction{
-  @include center;
   @extend %flex-col;
+  text-align: center;
   width: 100%;
   &__heading {
     width: 300px;
@@ -43,7 +43,7 @@ body{
   @extend %flex-col;
   justify-content: space-evenly;
   margin: 40px 0 ;
-  &__label {
+  &__heading {
     width: 90%;
     margin: auto;
   }
@@ -65,8 +65,8 @@ body{
 .repertory {
   &__heading {
     @extend %flex-col;
-    @include center;
     @include heading-margin;
+    text-align: center;
   }
   &__heading {
     @include heading-margin;
@@ -83,8 +83,8 @@ body{
     height: 200px;
   }
   &__caption {
-    margin: 0 $padding-small;
     @extend %flex-row;
+    margin: 0 $padding-small;
     justify-content: space-between;
   }
   &__new--mint {
@@ -138,11 +138,10 @@ body{
   }
 }
 .menu__section {
-  
   height: 360px;
- &--big{
-   height: 440px;
- }
+  &--big {
+    height: 440px;
+  }
 }
 .product {
   @extend %flex-row;
@@ -157,9 +156,7 @@ body{
     }
   }
   &__name{
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    @include auto-zero;
   }
   &__check--mint {
     padding-right: 10px;
@@ -172,12 +169,8 @@ body{
   }
 }
 .anim-spawn{
-  width: 100%;
-  margin: auto;
-  padding: 0;
+  @include auto-zero;
   &--big {
-    width: 100%;
-    margin: auto;
-    padding: 0;
+    @include auto-zero;
   }
 }
