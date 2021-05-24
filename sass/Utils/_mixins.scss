@@ -8,14 +8,15 @@
 @mixin border-radius-top {
   border-radius: $radius-light $radius-light 0 0;
 }
-
-@mixin center {
-  text-align: center;
-}
-
 @mixin no-deco {
   list-style-type: none;
   text-decoration: none;
+}
+
+@mixin auto-zero {
+  width: 100%;
+  margin: auto;
+  padding: 0;
 }
 
 @mixin heading-margin {
