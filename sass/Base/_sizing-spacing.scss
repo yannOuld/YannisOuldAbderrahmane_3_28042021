@@ -13,7 +13,7 @@ body{
   margin: auto;
   @extend %flex-col;
 }
-/* index */
+
 .banniere{
   &__logo{
       margin: auto;
@@ -23,87 +23,7 @@ body{
     padding: 20px;
   }
 }
-.introduction{
-  @extend %flex-col;
-  text-align: center;
-  width: 100%;
-  &__heading {
-    width: 300px;
-    margin: 50px auto 30px;
-  }
-  &__text {
-    margin: 0 auto 40px;
-  }
-  &__btn--purple {
-    margin: 0 auto 60px;
-    padding: 15px 20px;
-  }
-}
-.manual {
-  @extend %flex-col;
-  justify-content: space-evenly;
-  margin: 40px 0 ;
-  &__heading {
-    width: 90%;
-    margin: auto;
-  }
-  &__list {
-    @extend %flex-col;
-    justify-content: space-evenly;
-    margin: auto;
-    padding: 0;
-  }
-  &__rule {
-    width: 80vw;
-    height: 70px;
-    margin: 20px 0;
-    i {
-      padding: 0 20px 0 40px;
-    }
-  }
-}
-.repertory {
-  &__heading {
-    @extend %flex-col;
-    @include heading-margin;
-    text-align: center;
-  }
-  &__heading {
-    @include heading-margin;
-  }
-  &__container {
-    margin-bottom: 30px;
-  }
-}
-.card {
-  width: 90%;
-  margin: 20px auto;
-  &__img {
-    width: 100%;
-    height: 200px;
-  }
-  &__caption {
-    @extend %flex-row;
-    margin: 0 $padding-small;
-    justify-content: space-between;
-  }
-  &__new--mint {
-    width: 80px;
-    padding: 10px;
-    top: 10px;
-    right: 10px;
-  }
-  &__heart{
-    offset-anchor: none;
-    width: 50px;
-    display: flex;
-    align-items: center;
-    i {
-      right: 0;
-      left: 0;
-    }
-  }
-}
+
 /* Menus */
 .menu {
   width: 100%;
@@ -114,8 +34,8 @@ body{
     height: 400px;
   }
   &__title {
-    @extend %flex-row;
     height: 100px;
+    @extend %flex-row;
     margin-top: -100px;
     padding: 0 15px;
     h1 {
@@ -156,10 +76,9 @@ body{
     }
   }
   &__name{
-    @include auto-zero;
-  }
-  &__check--mint {
-    padding-right: 10px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
   &__ingredient {
     width: 100%;
@@ -169,8 +88,12 @@ body{
   }
 }
 .anim-spawn{
-  @include auto-zero;
+  width: 100%;
+  margin: auto;
+  padding: 0;
   &--big {
-    @include auto-zero;
+    width: 100%;
+    margin: auto;
+    padding: 0;
   }
 }
