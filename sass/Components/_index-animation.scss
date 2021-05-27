@@ -15,14 +15,9 @@
 }
 /* heart animation*/
 .card__heart {
-  offset-anchor: none;
   width: 50px;
   display: flex;
   align-items: center;
-  i {
-    right: 0;
-    left: 0;
-  }
 }
 .heart--full {
   opacity: 0;
@@ -32,12 +27,14 @@
   -webkit-text-fill-color: transparent;
   transition: all 300ms;
 }
-.heart--empty:hover:active {
-  opacity: 0;
-}
-.heart--full:hover:active {
-  opacity: 1;
-  transform: scale(1.15);
+.card__heart:hover:active{
+  .heart--empty {
+    opacity: 0;
+  }
+  .heart--full{
+    opacity: 1;
+    transform: scale(1.1);
+  }
 }
 
 
