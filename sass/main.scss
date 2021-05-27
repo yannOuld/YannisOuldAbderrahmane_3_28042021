@@ -1,11 +1,14 @@
 @import "./Utils/variables";
 @import "./Utils/mixins";
-@import "./Components/components";
 @import "./Utils/placeholders";
+@import "./Components/index-animation";
+@import "./Components/product-animation";
+@import "./Components/menu-animation";
 @import "./Base/fonts.scss";
 @import "./Base/sizing-spacing";
 @import "./Layout/header-footer";
 @import "./Pages/index.scss";
+@import "./Pages/index-sizing-spacing";
 
 a {
   @include no-deco;
@@ -14,7 +17,7 @@ a {
 .menu {
   background-color: $color-smoke;
   &__img {
-    object-fit: fill;
+    object-fit: cover;
   }
   &__title {
     border-radius: $radius-medium $radius-medium 0 0;
@@ -37,6 +40,7 @@ a {
   &__content {
     @include no-deco;
     text-align: left;
+    transition: all $product-anim ease-out;
   }
   &__name {
     text-overflow: ellipsis;
