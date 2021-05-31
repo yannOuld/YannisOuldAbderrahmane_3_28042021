@@ -67,7 +67,7 @@ presentation:
 - pseudo-classe hover et active
 - superposition de deux icones 
 - interchanger leur opacités 
-- utilisation d'une transition transform scale (1.15)
+- utilisation d'une transition transform scale (1.1)
 <!-- slide -->
 # underlines des menus 
 - pseudo-elements before / after
