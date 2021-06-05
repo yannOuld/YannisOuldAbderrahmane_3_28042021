@@ -10,6 +10,7 @@
 @import "./Pages/index.scss";
 @import "./Pages/index-sizing-spacing";
 @import "./Components/_loader.scss";
+@import "./Components/index-map-list";
 
 a {
   @include no-deco;
