@@ -9,6 +9,7 @@
 @import "./Layout/header-footer";
 @import "./Pages/index.scss";
 @import "./Pages/index-sizing-spacing";
+@import "./Components/_loader.scss";
 
 a {
   @include no-deco;
@@ -29,6 +30,7 @@ a {
   }
   &__btn--purple {
     @include btn;
+    border-style: none;
   }
 }
 .product {

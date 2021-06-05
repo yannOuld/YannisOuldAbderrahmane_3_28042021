@@ -16,7 +16,7 @@
     text-align: left;
     outline: none;
     &__lightpurple {
-      background-color: lighten($color: $color-medium-purple, $amount: 27%);
+      background-color: lighten($color: $color-darker-purple, $amount: 35%);
       i {
        color: $color-rebecca-purple;
       }

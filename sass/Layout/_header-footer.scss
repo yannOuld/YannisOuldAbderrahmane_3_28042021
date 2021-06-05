@@ -11,14 +11,28 @@
       width: 200px;
       height: 50px;
     }
-    &__map {
-      display: block;
-      width: 100%;
-      height: 50px;
-      border-style: none;
-      background-color: darken($color: $color-smoke, $amount: 5%);
-      box-shadow: inset 0px 20px 2px -15px rgba(59, 68, 66, 0.19);
-    }
+  }
+.map {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  
+  &__icon {
+    position: absolute;
+    vertical-align: middle;
+    margin-left: 35vw;
+  }
+  &__selection {
+    align-content: center;
+    width: 100%;
+    height: 50px;
+    border-style: none;
+    background-color: darken($color: $color-smoke, $amount: 5%);
+    box-shadow: inset 0px 20px 2px -15px rgba(59, 68, 66, 0.19);
+    padding-left: 40vw;
+    appearance: none;
+  }
 }
 /* footer rules for all pages */
 .footer {
@@ -33,10 +47,10 @@
     width: 100px;
     margin: 10px 30px;
   }
-  i {
-    margin-right: 10px;
+  .fa-utensils {
+    margin-right: 9px; 
   }
-}
-.fa-hands-helping {
-  font-size: 3px;
+  .fa-hands-helping {
+    margin-right: 5px;
+  }
 }
