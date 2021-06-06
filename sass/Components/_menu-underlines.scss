@@ -1,0 +1,11 @@
+/* headings green underline*/
+.menu__heading::before,
+.menu__heading::after {
+  content: "";
+  height: 3px;
+  width: 60px;
+  background: $color-mint;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}

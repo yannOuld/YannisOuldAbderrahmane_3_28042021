@@ -1,16 +1,19 @@
 @import "./Utils/variables";
 @import "./Utils/mixins";
 @import "./Utils/placeholders";
-@import "./Components/index-animation";
-@import "./Components/product-animation";
-@import "./Components/menu-animation";
 @import "./Base/fonts.scss";
 @import "./Base/sizing-spacing";
 @import "./Layout/header-footer";
-@import "./Pages/index.scss";
 @import "./Pages/index-sizing-spacing";
+@import "./Pages/index.scss";
+@import "./Components/footer-email";
+@import "./Components/index-hearts";
+@import "./Components/product-animation";
+@import "./Components/menu-animation";
 @import "./Components/_loader.scss";
-@import "./Components/index-map-list";
+@import "./Components/index-map-anchors";
+@import "./Components/menu-underlines";
+@import "./Components/index-list-number";
 
 a {
   @include no-deco;

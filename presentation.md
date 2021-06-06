@@ -68,13 +68,27 @@ presentation:
 <!-- slide -->
 
 ###Elements possédants des animations
-
+-loading spinner
+-liste des localisations
 -nombres de la liste de l'index 
 -boutons 
 -icones (coeurs)
+-bouton contact
 -titres des menus 
 -liste des produits 
 -produits 
+
+<!-- slide -->
+#Loading spinner
+
+-une div englobant le contenu du body avec une animation gerant l'opacité
+-une div avec une animation a la proprieté visibility contenant un loader ayant une animation de rotation et un texte pour le  chargement 
+
+<!-- slide -->
+#Liste des localisations
+
+-une list avec une visibility hidden contenant des ancres
+-un bouton avec une pseudo-classe focus et un combinateur adjacent
 
 <!-- slide -->
 
@@ -96,10 +110,17 @@ presentation:
 
 #Icones Coeurs
 
--pseudo-classe hover et active
+-pseudo-classe hover
 -superposition de deux icones 
 -interchanger leur opacités 
--utilisation d'une transition transform scale (1.1)
+-utilisation d'une transition transform scale
+git
+<!-- slide -->
+
+Bouton contact
+
+-element de liste avec un transform scaleY 0 à 1 
+-bouton contact stylisé dans une liste avec un hover et un combinateur
 
 <!-- slide -->
 

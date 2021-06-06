@@ -1,24 +1,8 @@
-/* manual list number*/
-.manual__step:before {
-  content: counter(number);
-  counter-increment: number;
-  color: white;
-  padding: 8px 10px 3px;
-  margin: 40px -10px;
-  font-size: 15px;
-  font-weight: bold;
-  border: 1px solid $color-darker-purple;
-  border-radius: $radius-heavy;
-  background-color: $color-darker-purple;
-  position: absolute;
-}
 /* heart animation*/
 .card__heart {
   width: 50px;
   display: flex;
   align-items: center;
-  position: absolute;
-  
 }
 .heart--full {
   opacity: 0;
