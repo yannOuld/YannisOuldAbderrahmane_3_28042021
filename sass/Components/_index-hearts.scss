@@ -1,0 +1,27 @@
+/* heart animation*/
+.card__heart {
+  width: 50px;
+  display: flex;
+  align-items: center;
+}
+.heart--full {
+  opacity: 0;
+  background: $color-heart;
+  background-clip: content-box;
+  -webkit-background-clip: text ;
+  -webkit-text-fill-color: transparent;
+  transition: all 500ms;
+  transform: scale(0);
+}
+.card__heart:hover {
+  .heart--empty {
+    opacity: 0;
+    transition-duration: 1s;
+  }
+  .heart--full{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
