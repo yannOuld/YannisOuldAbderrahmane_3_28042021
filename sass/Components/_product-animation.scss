@@ -1,36 +1,35 @@
 .product__check--mint {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-    color: white;
-    border-radius: 0 $radius-light $radius-light 0;
-    position: absolute;
-    right: -70px;
-    width: 70px;  
-    background-color: $color-mint;
-    transition: all $product-anim ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  color: white;
+  border-radius: 0 $radius-light $radius-light 0;
+  position: absolute;
+  right: -70px;
+  width: 70px;
+  background-color: $color-mint;
+  transition: all $product-anim ease-out;
+  i {
+    transition: all 0 ease-in-out;
+  }
+}
+.product {
+  .product:hover &__check--mint {
+    right: 0px;
     i {
-      transition: all 0 ease-in-out; 
+      transform: rotate(360deg);
+      transition-duration: $product-anim;
     }
   }
-  .product {
-    .product:hover &__check--mint {
-      right: 0px;
-      i {
-        transform: rotate(360deg);
-        transition-duration: $product-anim;
-      }
-    }
-    .product:hover &__content {
-      width: calc(100% - 80px);
-    }
-    .product:hover &__name {
-      width: calc(100% - 30px);
-    }
-    .product:hover &__ingredient {
-      width: calc(100% - 30px);
-    }
+  .product:hover &__content {
+    width: calc(100% - 80px);
   }
-  
+  .product:hover &__name {
+    width: calc(100% - 30px);
+  }
+  .product:hover &__ingredient {
+    width: calc(100% - 30px);
+  }
+}

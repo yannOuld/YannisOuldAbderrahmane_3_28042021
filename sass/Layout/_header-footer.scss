@@ -1,17 +1,17 @@
 /* head rules for all pages */
 .banniere {
-    text-align: center;
+  text-align: center;
+  width: 100%;
+  flex-wrap: wrap;
+  &__shadow-box {
     width: 100%;
-    flex-wrap: wrap;
-    &__shadow-box {
-      width: 100%;
-      display: flex;
-    }
-    &__logo {
-      width: 200px;
-      height: 50px;
-    }
+    display: flex;
   }
+  &__logo {
+    width: 200px;
+    height: 50px;
+  }
+}
 
 /* footer rules for all pages */
 .footer {
@@ -27,7 +27,7 @@
     margin: 10px 30px;
   }
   .fa-utensils {
-    margin-right: 9px; 
+    margin-right: 9px;
   }
   .fa-hands-helping {
     margin-right: 5px;

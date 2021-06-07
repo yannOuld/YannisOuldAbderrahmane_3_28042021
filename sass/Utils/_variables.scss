@@ -1,18 +1,27 @@
 /* Variables */
 /* -- color -- */
-$color-mint: #99E2D0;
-$color-medium-purple: #FF79DA;
-$color-darker-purple: #9356DC ;
+$color-mint: #99e2d0;
+$color-medium-purple: #ff79da;
+$color-darker-purple: #9356dc;
 $color-rebecca-purple: rgba(102, 51, 153, 1);
 $color-smoke: rgb(240, 240, 240);
 $color-outerspace: rgba(46, 49, 49, 1);
-$color-heart:  linear-gradient(6deg, rgba(254,93,234,1) 0%, rgba(130,55,205,1) 100%);
-$color-linear: linear-gradient(176deg, rgba(255,121,218,1) 9%, rgba(246,118,218,1) 30%, rgba(147,86,220,1) 80%);
+$color-heart: linear-gradient(
+  6deg,
+  rgba(254, 93, 234, 1) 0%,
+  rgba(130, 55, 205, 1) 100%
+);
+$color-linear: linear-gradient(
+  176deg,
+  rgba(255, 121, 218, 1) 9%,
+  rgba(246, 118, 218, 1) 30%,
+  rgba(147, 86, 220, 1) 80%
+);
 /* -- Dimensions -- */
 $padding-small: 10px;
 $margin: 40px;
 $radius-light: 15px;
 $radius-medium: 30px;
 $radius-heavy: 100%;
-/* --duréee -- */ 
-$product-anim: 500ms
+/* --duréee -- */
+$product-anim: 500ms;

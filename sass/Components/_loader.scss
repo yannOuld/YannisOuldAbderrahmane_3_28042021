@@ -1,65 +1,65 @@
 .loader {
-    animation: transitionIn 3s ease;
-    width: 100%;
-    height: 100%;
-    @extend %flex-col;
-    animation-fill-mode: both;
-    &__box {
-        animation: transitionSpawn 2.5s ease-in;
-        display: inline-flex;
-        justify-content: space-evenly;
-        width: 250px;
-        height: 72px;
-        position: fixed;
-        margin: auto;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 1;
-        border-radius: 50px;
-        visibility: hidden;
-    }
-    &__text {
-        color: $color-darker-purple;
-        font-weight: bold;
-    }
-    &__spinner{
-        border: 3px solid $color-mint; 
-        border-top: 3px solid $color-darker-purple;
-        border-radius: 50%;
-        width: 30px;
-        height: 30px;
-        margin: 5px  20px 0 0;
-        animation: spin 2s linear infinite;
-    }
+  animation: transitionIn 3s ease;
+  width: 100%;
+  height: 100%;
+  @extend %flex-col;
+  animation-fill-mode: both;
+  &__box {
+    animation: transitionSpawn 2.5s ease-in;
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 250px;
+    height: 72px;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    border-radius: 50px;
+    visibility: hidden;
+  }
+  &__text {
+    color: $color-darker-purple;
+    font-weight: bold;
+  }
+  &__spinner {
+    border: 3px solid $color-mint;
+    border-top: 3px solid $color-darker-purple;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 5px 20px 0 0;
+    animation: spin 2s linear infinite;
+  }
 }
 @keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 @keyframes transitionSpawn {
-    0% {
-       visibility: visible;
-    }
-    100% {
-        visibility: hidden;
-    }
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
 }
 @keyframes transitionIn {
-    0% {
-        opacity: 0;
-    }
-    99% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
