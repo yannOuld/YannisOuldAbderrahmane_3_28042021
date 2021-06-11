@@ -18,7 +18,7 @@
     &__lightpurple {
       background-color: lighten($color: $color-darker-purple, $amount: 35%);
       i {
-       color: $color-rebecca-purple;
+        color: $color-rebecca-purple;
       }
     }
   }
@@ -48,7 +48,7 @@
     color: darken($color: $color-mint, $amount: 35%);
     background-color: $color-mint;
   }
-  &__heart{
+  &__heart {
     position: relative;
     i {
       position: absolute;
@@ -56,7 +56,7 @@
   }
 }
 
-@media screen and ( min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .repertory__container {
     display: flex;
     flex-wrap: wrap;

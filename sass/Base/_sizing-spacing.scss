@@ -8,18 +8,18 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   width: 100%;
   margin: auto;
   @extend %flex-col;
 }
 
-.banniere{
-  &__logo{
-      margin: auto;
-      padding: 5px 0;
+.banniere {
+  &__logo {
+    margin: auto;
+    padding: 5px 0;
   }
-  &__link{
+  &__link {
     padding: 20px;
   }
 }
@@ -75,7 +75,7 @@ body{
       justify-content: space-between;
     }
   }
-  &__name{
+  &__name {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -83,11 +83,11 @@ body{
   &__ingredient {
     width: 100%;
   }
-  &__price{
+  &__price {
     width: 30px;
   }
 }
-.anim-spawn{
+.anim-spawn {
   width: 100%;
   margin: auto;
   padding: 0;
