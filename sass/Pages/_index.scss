@@ -16,9 +16,9 @@
     text-align: left;
     outline: none;
     &__lightpurple {
-      background-color: lighten($color: $color-darker-purple, $amount: 35%);
+      background-color: lighten($color: $color-primaire, $amount: 35%);
       i {
-        color: $color-rebecca-purple;
+        color: $color-primaire;
       }
     }
   }
@@ -45,8 +45,8 @@
     border-radius: 5px;
     text-align: center;
     position: absolute;
-    color: darken($color: $color-mint, $amount: 35%);
-    background-color: $color-mint;
+    color: darken($color: $color-tertiaire, $amount: 35%);
+    background-color: $color-tertiaire;
   }
   &__heart {
     position: relative;
