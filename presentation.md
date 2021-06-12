@@ -35,8 +35,12 @@ integrations de maquettes et d'animations avec Sass
 
 # Components
 
-- animations de l'index
+- animation des coeurs
+- animation des nombres de liste index
+- animation loading spinner
+- animation des localisations de restaurants
 - animations des menus
+- animation des underlines verts sur les titres
 - animations des produits
 
 <!-- slide -->
@@ -117,41 +121,41 @@ integrations de maquettes et d'animations avec Sass
 - superposition de deux icones
 - interchanger leur opacités
 - utilisation d'une transition transform scale
-  git
 
 <!-- slide -->
 
 # underlines des menus
 
 - pseudo-elements before / after
-- sans contenu
-- width et height
+- contenu sans nom
 - position absolu left et bottom 0
+- width et height
 
 <!-- slide -->
 
 # apparition des produits
 
-- une animation / keyframes translate sur axe Y avec des délais pour chaque produit
-- une animation / keyframes pour le conteneur des produits qui gère l'opacité
+- un keyframes pour le conteneur ul des produits qui gère l'opacité et height des wrappers
+- un keyframes pour les li avec translates sur axe Y et des délais pour chaque produits
 - utilisation d'animation-fill mode:both pour un rendu naturel
 
 <!-- slide -->
 
-# produits
+# produits (li)
 
 - pseudo-classe hover
-  overflow hidden
+- overflow hidden
 
 <!-- slide -->
 
-## textes
+## contenu des textes produits 
 
-- diminution du width via un calc
+- balises h4 pour les noms des produit et balises p contenant deux spans pour les ingredients et leurs coûts 
+- diminution du width via un calc des ingredients et leurs noms 
 
 <!-- slide -->
 
-## div de l'icone
+## animation de l'icone de validation
 
-- position absolute right proportionnel a sa largeur
-- rotation de l'icone avec une transition transform rotate
+- position absolute right proportionnel a sa largeur pour le conteneur
+- rotation de l'icone avec une transition transform rotate 360 degrées 
