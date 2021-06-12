@@ -19,9 +19,8 @@
   &__list {
     width: 100%;
     @extend %flex-col;
-    justify-content: space-around;
     background-color: white;
-    border-radius: 15px;
+    border-radius: $padding-small;
     text-align: left;
     @include no-deco;
     border-radius: 15px;
