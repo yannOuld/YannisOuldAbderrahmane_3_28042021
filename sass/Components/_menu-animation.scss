@@ -1,10 +1,10 @@
 /* animation menu */
 .anim-spawn {
-  animation: loading 1.5s linear 0s;
+  animation: loading $menu-anim linear 0s;
   animation-fill-mode: both;
 }
 .anim-spawn--item {
-  animation: anim-item 1.5s linear 0s;
+  animation: anim-item $menu-anim linear 0s;
   animation-fill-mode: both;
 }
 .anim-delay05 {
@@ -14,10 +14,10 @@
   animation-delay: 1s;
 }
 .anim-delay15 {
-  animation-delay: 1.5s;
+  animation-delay: $menu-anim;
 }
 .anim-spawn--big {
-  animation: loading 1.5s linear 0s;
+  animation: loading $menu-anim linear 0s;
   animation-fill-mode: both;
 }
 .anim-delay0375 {
