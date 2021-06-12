@@ -1,11 +1,11 @@
 .loader {
-  animation: transitionIn 1.5s ease;
+  animation: transitionIn $loader-anim ease;
   width: 100%;
   height: 100%;
   @extend %flex-col;
   animation-fill-mode: both;
   &__box {
-    animation: transitionSpawn 1.3s ease-in;
+    animation: transitionSpawn $loader-anim ease-in;
     display: inline-flex;
     justify-content: space-evenly;
     width: 250px;
