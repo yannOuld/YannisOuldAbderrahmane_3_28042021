@@ -1,0 +1,28 @@
+@media screen and (min-width: 1024px) {
+    .product {
+      width: 70vw;
+    }
+    .menu {
+      &__heading{
+        margin: 0 auto;
+        width: 150px;
+      }
+      &__title {
+        width: unset;
+        padding: 0 50px 0 15vw ;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 325px) {
+    .manual {
+      &__rule {
+        font-size: 12px;
+      }
+    }
+    .menu {
+      &__title {
+        font-size: 14px;
+      }
+    }
+  }

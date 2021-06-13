@@ -72,7 +72,7 @@ integrations de maquettes et d'animations avec Sass
 
 <!-- slide -->
 
-## #Elements possédants des animations
+## Elements possédants des animations
 
 - loading spinner
 - liste des localisations
@@ -124,7 +124,7 @@ integrations de maquettes et d'animations avec Sass
 
 <!-- slide -->
 
-# underlines des menus
+# underlines des titres 
 
 - pseudo-elements before / after
 - contenu sans nom
